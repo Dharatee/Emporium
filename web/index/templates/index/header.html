@@ -9,27 +9,18 @@
         <title>Emporium</title>
 
 
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+        
 </head>
 
 <body> 
-       <!-- <nav class="nav" role="navigation">
+       <nav class="nav" role="navigation">
             
             <div class="nav-wrapper container" >
-                <a id="brand-logo" href="/" class="brand-logo">
-                     <img class="brand-logo" src="{% static 'index/image/logo1.png' %}">
-                    <p>Emporium</p>
+                <a  href="/" class="brand-logo" style="height: 30px;" >
+                     <img class="logo" src="{% static 'index/image/logo1.png' %}">
+                    
                 </a>
-                 <a href="/" class="brand-logo">Emporium</a>  
+                 <a href="/" class="brand-logo"></a>  
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href="/"><i class="material-icons left">group</i>Team</a></li>
@@ -39,36 +30,10 @@
                     <li><a href="/"><i class="material-icons left">account_circle</i>Login</a></li>
                 </ul>
             </div>
-        </nav>  -->
+        </nav> 
 
 
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-                <a class="navbar-brand" href="#">Experience Nepal</a>
-    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a href="/"><i class="material-icons right">home</i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/"><i class="material-icons left">home</i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/"><i class="material-icons left">home</i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/"><i class="material-icons left">home</i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/"><i class="material-icons left">home</i>Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+       
 
         {% block content %}
        
