@@ -1,77 +1,76 @@
-.content {
-	overflow: auto;
-  border: none;
-  padding-left: 15%;
-  padding-right: 15%;
-  }
-  .content div {
-  padding: 10px;
-  height: 100%;
-  width: 35%;
-  }
+nav {
+    background-color: rgb(38, 65, 85);
+    position: fixed;
+ }
 
-  .nav {
-  background-color: rgb(38, 65, 85);
-  }
-
-.logo{
-  height: 65px;
-  width: 65px;
-}
-
-
-
-  .first {
-	float: left;
-  width: 25%;
-  height: 20%;
-  background-color: rgb(163, 194, 194, 0.75);
-  
-  }
-
-  img{
-    border: 1px solid #ddd;
-    padding : 5px;
-    width: 250px;
-    height: 255px;
-  }
-
-  .row-half-height {
-    height: 30px;
-  }
-
-  .second {
-	float: right;
-  width: 50%;
-  height: 30%;
-  
-  }
-
-  #footer {
+#footer {
     height: 35px;
-    background-color:rgb(224, 235, 235);
+    background-color:rgb(37, 63, 83);
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
 }
 
-  /* --- Media Queries --*/
-  @media (max-width: 992px) {
- 
-    .col-order-2{
-      order: 2;
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #66f;
+    text-decoration: none;
+}
+
+.test-content {
+    height: 100%;
+    background-image: linear-gradient(red, blue);
+}
+
+/*---Media Queries --*/
+/* Small (sm) and Extra-small (xs) devices (phones, 768px and down) */
+/* @media (max-width: 768px) {
+    .col-calender {
+        order: 2;
     }
-  
-    .column-order-2{
-      order: 2;
+    .col-graph {
+        order: 1;
     }
-  
-    .column-order-1{
-      order: 1;
+} */
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* .col-calender {
+        order: 1;
     }
-  
-    .col-order-1{
-      order:1 ;
+    .col-graph {
+        order: 2;
+    } */
+
+    .scroll-wrapper {
+        position: relative;
+        height: 85vh;
     }
-  }
+
+    .scroll-col {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #264155;
+    border-radius: 0;
+}
