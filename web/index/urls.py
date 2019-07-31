@@ -7,4 +7,5 @@ app_name = "index"
 
 urlpatterns = [
     path("",views.homepage, name="homepage"),
+   
 ]

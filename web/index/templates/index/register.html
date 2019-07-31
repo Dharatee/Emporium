@@ -1,0 +1,79 @@
+{% extends 'index/base.html' %}
+
+{% block content %}
+
+<div class="conatiner">
+    <div class="row">
+        <p align="center" class="flow-text cyan-text text-darken-7">Registration</p>
+        <form class="col s12" action="register" method="POST">
+            {% csrf token %}
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input name="First_name" id="First_name" type="text" class="validate">
+                        <label for="First_name">First Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input name="Middle_name" id="Middle_name" type="text" class="validate">
+                        <label for="Middle_name">Middle Name</label>
+                </div>
+                    <div class="input-field col s4">
+                        <input name="Last_name" id="Last_name" type="text" class="validate">
+                        <label for="Last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="Username" id="Username" type="text" class="validate">
+                        <label for="Username">Username</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="Password1" id="Password1" type="text" class="validate">
+                        <label for="Password1">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="Password2" id="Password2" type="text" class="validate">
+                        <label for="Password2">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="Email" id="Email" type="text" class="validate">
+                        <label for="Email">Email</label>
+                    </div>     
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="Contact" id="Contact" type="text" class="validate">
+                        <label for="Contact">Contact</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn waves-effect waves-light" type="submit">Register
+                            <i class="material-icons right">Send</i>
+                        </button>
+                        <i>{% for in in mesasages %}
+                            <p style="color: darkolivegreen">{{i}}</p>
+                            {% endfor %}
+                        </i>
+                        <div id="errMsg" class="card-panel cyan lighten-2 red-text text-darken-2" style="display: none">
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    
+        $(document).ready(function(){
+          $('select').formSelect();
+        });
+        </script>
+
+{% endblock %}

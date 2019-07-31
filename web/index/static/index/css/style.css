@@ -1,11 +1,9 @@
 nav {
     background-color: rgb(38, 65, 85);
-    position: fixed;
  }
 
 #footer {
-    height: 35px;
-    background-color:rgb(37, 63, 83);
+    background-color: rgb(37, 63, 83);
     bottom: 0px;
     left: 0px;
     right: 0px;
